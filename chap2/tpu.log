@@ -1,0 +1,35 @@
+natsutan0@emiru:~/myproj/keras_book/chap2$ python3 mnist_tpu.py
+WARNING:tensorflow:From /home/natsutan0/.local/lib/python3.5/site-packages/tensorflow/python/ops/resource_variable_ops.py:434: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be rem\
+oved in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2018-12-25 02:02:07.817964: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:354] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has no\
+t yet been created.
+WARNING:tensorflow:tpu_model (from tensorflow.contrib.tpu.python.tpu.keras_support) is experimental and may change or be removed at any time, and without warning.
+2018-12-25 02:02:07.834462: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2500000000 Hz
+2018-12-25 02:02:07.834760: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55f1d962b4d0 executing computations on platform Host. Devices:
+2018-12-25 02:02:07.834798: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+Epoch 1/5
+WARNING:tensorflow:From /home/natsutan0/.local/lib/python3.5/site-packages/tensorflow/contrib/tpu/python/tpu/keras_support.py:302: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be remov\
+ed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /home/natsutan0/.local/lib/python3.5/site-packages/tensorflow/python/ops/math_ops.py:3064: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future v\
+ersion.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:Cannot update non-variable config: epsilon
+60000/60000 [==============================] - 8s 140us/sample - loss: 0.2546 - acc: 0.9275
+Epoch 2/5
+60000/60000 [==============================] - 4s 69us/sample - loss: 0.1038 - acc: 0.9697
+Epoch 3/5
+60000/60000 [==============================] - 4s 71us/sample - loss: 0.0680 - acc: 0.9797
+Epoch 4/5
+60000/60000 [==============================] - 4s 71us/sample - loss: 0.0486 - acc: 0.9853
+Epoch 5/5
+60000/60000 [==============================] - 4s 71us/sample - loss: 0.0365 - acc: 0.9890
+10000/10000 [==============================] - 4s 355us/sample - loss: 0.0795 - acc: 0.9751
+test_acc: , 0.9751
+natsutan0@emiru:~/myproj/keras_book/chap2$
+
+
