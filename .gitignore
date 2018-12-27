@@ -1,2 +1,6 @@
 
 .idea/*
+*.h5
+*.pickle
+chap5/plot1.png
+chap5/plot2.png
