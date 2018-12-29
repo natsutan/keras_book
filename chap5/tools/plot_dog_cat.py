@@ -3,7 +3,7 @@ import os
 import matplotlib.pyplot as plt
 
 save_dir = '../save'
-history_save = os.path.join(save_dir, 'history_tpu.pickle')
+history_save = os.path.join(save_dir, 'history_tpu_v2.pickle')
 
 history = pickle.load(open(history_save, 'rb'))
 
@@ -17,7 +17,7 @@ plt.plot(epochs, acc, 'bo', label='Training acc')
 plt.plot(epochs, val_acc, 'b', label='Validation acc')
 plt.title('Training and Validation accuracy(TPU)')
 plt.legend()
-plt.savefig(os.path.join(save_dir, 'plot1_tpu.png'))
+plt.savefig(os.path.join(save_dir, 'plot1_tpu_v2.png'))
 plt.figure()
 
 plt.plot(epochs, loss, 'bo', label='Training loss')
@@ -25,4 +25,4 @@ plt.plot(epochs, val_loss, 'b', label='Validation acc')
 plt.title('Training and Validation loss(TPU)')
 plt.legend()
 
-plt.savefig(os.path.join(save_dir,'plot2_tpu.png'))
+plt.savefig(os.path.join(save_dir,'plot2_tpu_v2.png'))
