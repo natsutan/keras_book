@@ -42,5 +42,5 @@ heatmap = cv2.resize(heatmap, (img.shape[1], img.shape[0]))
 heatmap = np.uint8(255 * heatmap)
 heatmap = cv2.applyColorMap(heatmap, cv2.COLORMAP_JET)
 superimposed_img = heatmap * 0.4 + img
-cv2.imwrite('heatmap.png', superimposed_img)
+cv2.imwrite('output/vgg_heatmap1.png', superimposed_img)
 
